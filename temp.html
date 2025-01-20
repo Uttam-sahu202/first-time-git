@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: coral;
+            margin-right:100px;
+            margin-top:100px;
+        }
+        div #box1 {
+            padding-top: 5px;
+            color: white;
+            word-spacing: 36px;
+            padding-left: 60px;
+            padding-right: 60px;
+            text-align: right;
+        }
+        #box1 .c1 {
+            position: absolute;
+            word-spacing: 10px;
+            left: 20px;
+            font-size: 1.5em;
+        }
+        div #cont {
+            position: relative;
+            color: white;
+            left: 60px;
+            font-size: 80px;
+            white-space: pre-line;
+        }
+        div #cont span {
+            font-size: 0.2em;
+            position: relative;
+            bottom: 50px;
+        }
+        #btn {
+            position: relative;
+            color: white;
+            width: 500px;
+            height: 10px;
+            bottom: 60px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+        }
+        .btn1 {
+    border: 2px solid blue;
+    background-color: white;
+    color: coral;
+    font-size: 12px; /* Reduce text size */
+    padding: 10px 20px; /* Increase box size (top-bottom: 10px, left-right: 20px) */
+    display: inline-block; /* Ensures proper box-sizing behavior for spans */
+}
+
+.btn2 {
+    border: 2px solid white;
+    font-size: 12px; /* Match the font size with .btn1 */
+    padding: 10px 20px; /* Same padding for consistency */
+    margin-left: 29px; /* Retain margin */
+    display: inline-block; /* Ensure it behaves like a box */
+}
+
+    </style>
+</head>
+<body>
+    <div> 
+        <p id="box1">
+            <span class="c1">css day</span> about speakers contact
+        </p>
+        <p id="cont"> css day is a 
+            conference for 
+            developers who
+            love beautiful
+            websites.
+            <span> 4-8 june 2023</span>
+        </p>
+
+        <p id="btn">
+            <span class="btn1">buy Tickets -> </span>
+            <span class="btn2">contact us</span>
+        </p>
+    </div>
+</body>
+</html>
